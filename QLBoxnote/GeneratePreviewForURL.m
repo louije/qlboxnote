@@ -16,6 +16,7 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
 {
     @autoreleasepool {
         
+        // Gather contents
         NSString *contents;
         NSData *file = [NSData dataWithContentsOfURL: [(__bridge NSURL * _Nonnull)(url) absoluteURL]];
         NSError *error = nil;
@@ -29,8 +30,7 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
             return noErr;
         }
         
-//        NSLog(json);
-        
+        // Prepare webview
         NSString *textEncoding = [[NSUserDefaults standardUserDefaults]
                                   stringForKey:@"webkitTextEncoding"];
         if (!textEncoding || [textEncoding length] == 0)
@@ -38,13 +38,32 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
         CFDictionaryRef properties = (__bridge CFDictionaryRef)[NSDictionary dictionaryWithObject:textEncoding
                                                      forKey:(NSString *)kQLPreviewPropertyTextEncodingNameKey];
         
+        NSString *styles = [[NSString alloc] initWithContentsOfFile:[[NSBundle bundleWithIdentifier: @"paris.fjord.qlboxnote"]
+                                                                     pathForResource:@"styles" ofType:@"css"]
+                                                           encoding:NSUTF8StringEncoding
+                                                              error:nil];
         
-//        NSString *outputString = @"<html><body><h1>Hello !</h1><p></body></html>";
-        NSData *output = [contents dataUsingEncoding: NSUTF8StringEncoding];
         
+        
+        NSString *outputString = [NSString stringWithFormat:@"<!DOCTYPE html>\n"
+                          "<html>\n"
+                          "<head>\n"
+                          "<meta charset=\"utf-8\">\n"
+                          "<style>\n%@</style>\n"
+                          "</head>\n"
+                          "<body>\n"
+                          "<main>\n"
+                          "%@"
+                          "</main>\n"
+                          "</body>\n"
+                          "</html>",
+                          styles, contents];
+        
+        NSData *output = [outputString dataUsingEncoding: NSUTF8StringEncoding];
+//        NSData *output = [contents dataUsingEncoding: NSUTF8StringEncoding];
         
         QLPreviewRequestSetDataRepresentation(preview, (__bridge CFDataRef)output,
-                                              //kUTTypePlainText,
+//                                              kUTTypePlainText,
                                               kUTTypeHTML,
                                               properties);
     }

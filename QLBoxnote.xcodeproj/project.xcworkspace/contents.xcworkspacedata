@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:BoxLook.xcodeproj">
+      location = "self:/Users/louije/Development/QLBoxnote/QLBoxnote.xcodeproj">
    </FileRef>
 </Workspace>

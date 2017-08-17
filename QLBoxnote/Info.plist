@@ -65,10 +65,10 @@
 			<array>
 				<string>public.json</string>
 			</array>
-			<key>UTTypeIdentifier</key>
-			<string>com.box.boxnote</string>
 			<key>UTTypeDescription</key>
 			<string>Boxnote</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.box.boxnote</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>

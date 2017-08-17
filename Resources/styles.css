@@ -1,0 +1,14 @@
+
+body {
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+  color: #333;
+  font-family: -apple-system, sans-serif;
+  line-height: 1.5;
+  word-wrap: break-word;
+  padding: 3rem 3rem 8rem 3rem;
+}
+
+main {
+  white-space: pre-wrap;
+}
