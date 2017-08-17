@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		06234D2A1F459A230060501C /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 06234D291F459A230060501C /* GenerateThumbnailForURL.c */; };
-		06234D2C1F459A230060501C /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 06234D2B1F459A230060501C /* GeneratePreviewForURL.c */; };
+		06234D2C1F459A230060501C /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 06234D2B1F459A230060501C /* GeneratePreviewForURL.m */; };
 		06234D2E1F459A230060501C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 06234D2D1F459A230060501C /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		06234D261F459A230060501C /* BoxLook.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoxLook.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		06234D291F459A230060501C /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
-		06234D2B1F459A230060501C /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		06234D2B1F459A230060501C /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
 		06234D2D1F459A230060501C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		06234D2F1F459A230060501C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,7 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				06234D291F459A230060501C /* GenerateThumbnailForURL.c */,
-				06234D2B1F459A230060501C /* GeneratePreviewForURL.c */,
+				06234D2B1F459A230060501C /* GeneratePreviewForURL.m */,
 				06234D2D1F459A230060501C /* main.c */,
 				06234D2F1F459A230060501C /* Info.plist */,
 			);
@@ -136,7 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06234D2A1F459A230060501C /* GenerateThumbnailForURL.c in Sources */,
-				06234D2C1F459A230060501C /* GeneratePreviewForURL.c in Sources */,
+				06234D2C1F459A230060501C /* GeneratePreviewForURL.m in Sources */,
 				06234D2E1F459A230060501C /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
