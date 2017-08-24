@@ -20,6 +20,8 @@
 		06234D2B1F459A230060501C /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
 		06234D2D1F459A230060501C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		06234D2F1F459A230060501C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06FB73881F4F3D3C006D61EC /* Install.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = Install.sh; path = Support/Install.sh; sourceTree = "<group>"; };
+		06FB738D1F4F3EC5006D61EC /* example.boxnote */ = {isa = PBXFileReference; lastKnownFileType = file; name = example.boxnote; path = Support/example.boxnote; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 		06234D1C1F459A230060501C = {
 			isa = PBXGroup;
 			children = (
+				06FB73871F4F3D24006D61EC /* Support */,
 				06234D281F459A230060501C /* QLBoxnote */,
 				0684E4921F45E90600812AC9 /* Resources */,
 				06234D271F459A230060501C /* Products */,
@@ -69,6 +72,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		06FB73871F4F3D24006D61EC /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				06FB73881F4F3D3C006D61EC /* Install.sh */,
+				06FB738D1F4F3EC5006D61EC /* example.boxnote */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -90,6 +102,7 @@
 				06234D221F459A230060501C /* Frameworks */,
 				06234D231F459A230060501C /* Headers */,
 				06234D241F459A230060501C /* Resources */,
+				06FB73891F4F3DA6006D61EC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -141,6 +154,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06FB73891F4F3DA6006D61EC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh Support/Install.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		06234D211F459A230060501C /* Sources */ = {
@@ -262,7 +291,7 @@
 				DEVELOPMENT_TEAM = 684SSZLSSG;
 				INFOPLIST_FILE = QLBoxnote/Info.plist;
 				INSTALL_PATH = /Library/QuickLook;
-				PRODUCT_BUNDLE_IDENTIFIER = paris.fjord.qlboxnote;
+				PRODUCT_BUNDLE_IDENTIFIER = com.meidosem.qlboxnote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = qlgenerator;
 			};
@@ -275,7 +304,7 @@
 				DEVELOPMENT_TEAM = 684SSZLSSG;
 				INFOPLIST_FILE = QLBoxnote/Info.plist;
 				INSTALL_PATH = /Library/QuickLook;
-				PRODUCT_BUNDLE_IDENTIFIER = paris.fjord.qlboxnote;
+				PRODUCT_BUNDLE_IDENTIFIER = com.meidosem.qlboxnote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = qlgenerator;
 			};

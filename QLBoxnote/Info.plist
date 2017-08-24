@@ -47,7 +47,7 @@
 	<key>CFPlugInUnloadFunction</key>
 	<string></string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2017 Fjord Paris. All rights reserved.</string>
+	<string>Copyright © 2017 Meidosem. All rights reserved.</string>
 	<key>QLNeedsToBeRunInMainThread</key>
 	<false/>
 	<key>QLPreviewHeight</key>

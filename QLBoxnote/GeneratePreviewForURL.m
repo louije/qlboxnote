@@ -38,7 +38,7 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
         CFDictionaryRef properties = (__bridge CFDictionaryRef)[NSDictionary dictionaryWithObject:textEncoding
                                                      forKey:(NSString *)kQLPreviewPropertyTextEncodingNameKey];
         
-        NSString *styles = [[NSString alloc] initWithContentsOfFile:[[NSBundle bundleWithIdentifier: @"paris.fjord.qlboxnote"]
+        NSString *styles = [[NSString alloc] initWithContentsOfFile:[[NSBundle bundleWithIdentifier: @"com.meidosem.qlboxnote"]
                                                                      pathForResource:@"styles" ofType:@"css"]
                                                            encoding:NSUTF8StringEncoding
                                                               error:nil];
