@@ -21,7 +21,7 @@
 		06234D2D1F459A230060501C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		06234D2F1F459A230060501C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06FB73881F4F3D3C006D61EC /* Install.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = Install.sh; path = Support/Install.sh; sourceTree = "<group>"; };
-		06FB738D1F4F3EC5006D61EC /* example.boxnote */ = {isa = PBXFileReference; lastKnownFileType = file; name = example.boxnote; path = Support/example.boxnote; sourceTree = SOURCE_ROOT; };
+		06FB738E1F4F46ED006D61EC /* RunExample.scptd */ = {isa = PBXFileReference; lastKnownFileType = file; name = RunExample.scptd; path = Support/RunExample.scptd; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				06FB73881F4F3D3C006D61EC /* Install.sh */,
-				06FB738D1F4F3EC5006D61EC /* example.boxnote */,
+				06FB738E1F4F46ED006D61EC /* RunExample.scptd */,
 			);
 			name = Support;
 			sourceTree = "<group>";
